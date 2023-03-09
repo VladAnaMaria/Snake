@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake</title>
+</head>
+
+<body>
+    <div class="scoreBox">
+        <img src="redapple.png" alt="Apple" class="redApple";/>
+        <div id="scoreId" class="displayScore" ;></div>
+        <img src="trophy.png" alt="Trophy" class="trophy";/>
+        <div id="highScoreId" class="displayHighScore";></div>
+    </div>
+    <div class="gameBox">
+        <canvas id="table" class="canvas" width=595 height=595></canvas>
+        <div class="startBox">
+            <img src="arrowkeys.png" alt="arrowKeys" width=210 height=130 /> <br>
+            <img src="hand.png" alt="hand" width=60 height=60 />
+        </div>
+        <div class="gameOverBox" hidden>
+            <img src="gameover.png" alt="GameOver" width=300 height=300 />
+            <div class="gameOverScore">
+                <div class="current"></div>
+                <div class="best"></div>
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="restartGame()">Play again!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
